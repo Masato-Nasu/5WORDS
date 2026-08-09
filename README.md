@@ -5,7 +5,7 @@
 高校1年生から大学受験まで、毎日少量の英単語を積み上げるための英語学習PWAです。
 AIがその日の新出5語を選び、**5語すべてを使った自然な英文**と、英文の内容を記憶しやすくする**1枚の情景画像**を生成します。
 
-![5 WORDS screenshot](./screenshot1.png)
+![5 WORDS screenshot](./screenshot1.svg)
 
 ## Concept
 
@@ -95,20 +95,6 @@ AIがその日の新出5語を選び、**5語すべてを使った自然な英�
 
 ## Deploy to Cloudflare Pages
 
-### 1. Clone / Download
-
-このリポジトリをローカルに用意します。
-
-### 2. Cloudflare Pages project
-
-テスト用プロジェクトを新規作成する場合：
-
-```powershell
-npx wrangler pages project create five-words-test --production-branch main
-```
-
-### 3. Deploy
-
 ```powershell
 npx wrangler pages deploy . --project-name five-words-test --branch main
 ```
@@ -135,9 +121,8 @@ npx wrangler pages deploy . --project-name five-words-test --branch main
 │     ├─ generate.js
 │     └─ image.js
 ├─ icons/
-│  ├─ icon-192.png
-│  └─ icon-512.png
-└─ screenshot1.png
+│  └─ icon.svg
+└─ screenshot1.svg
 ```
 
 ## Version
