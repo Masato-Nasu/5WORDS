@@ -5,7 +5,7 @@
 高校1年生から大学受験まで、毎日少量の英単語を積み上げるための英語学習PWAです。
 AIがその日の新出5語を選び、**5語すべてを使った自然な英文**と、英文の内容を記憶しやすくする**1枚の情景画像**を生成します。
 
-![5 WORDS screenshot](./screenshot1.svg)
+![5 WORDS screenshot](./screenshot1.png)
 
 ## Concept
 
