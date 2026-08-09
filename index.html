@@ -35,6 +35,7 @@
     <button class="tab active" data-view="today">今日</button>
     <button class="tab" data-view="calendar">カレンダー</button>
     <button class="tab" data-view="review">復習</button>
+    <button class="tab" data-view="learned">単語一覧</button>
   </nav>
 
   <section class="view active" id="todayView">
@@ -76,6 +77,23 @@
       <div class="progress"><div id="roadProgress" style="width:0%"></div></div>
     </div>
   </section>
+
+  <section class="view" id="learnedView">
+    <div class="card">
+      <div class="eyebrow">MY WORDS</div>
+      <h2>覚えた単語一覧</h2>
+      <div class="sub" id="learnedSummary">学習を完了した単語がここに並びます。</div>
+      <div class="learned-tools">
+        <input id="wordSearch" class="search-input" type="search" placeholder="単語・意味を検索" autocomplete="off" />
+        <button class="primary" id="learnedTestBtn" type="button">一覧から10問テスト</button>
+      </div>
+      <div class="tiny learned-test-note">検索中は、表示されている単語だけがテスト対象になります。</div>
+      <div id="learnedTestArea"></div>
+    </div>
+    <div class="card learned-list-card">
+      <div id="learnedWordList" class="learned-list"></div>
+    </div>
+  </section>
 </div>
 <div class="modal-backdrop" id="apiModal" role="dialog" aria-modal="true" aria-labelledby="apiModalTitle">
   <div class="modal">
@@ -95,5 +113,6 @@
 <script src="./app-core.js"></script>
 <script src="./app-lesson.js"></script>
 <script src="./app-calendar.js"></script>
+<script src="./app-learned.js"></script>
 </body>
 </html>
